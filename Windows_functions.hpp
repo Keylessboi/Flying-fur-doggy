@@ -1,2 +1,0 @@
-void calculate();
-void lose();

@@ -4,7 +4,6 @@ for the record furdo is indeed pronounced (f-UR-do) */
 You and the flying fur (f-UR) doggys (dau-WG-ys) infiltrate the tower held by the bees. You need to use your furdo attacks to attack the furdo of the bee and take over the tower without dying */
 #include "Windows_functions.hpp"
 #include <iostream>
-#include <unistd.h>
 #include <cstdlib>
 #include <time.h>
 #include <chrono>
@@ -38,7 +37,6 @@ switch (answer) {
   }
   else {
     lose();
-    return(0);
   }
   break;
   
@@ -52,7 +50,6 @@ switch (answer) {
   }
   else {
     lose();
-    return(0);
   }
   default:
     break;
@@ -78,7 +75,7 @@ case 1:
   }
   else {
     lose();
-    return(0);
+    
   }
   break;
   case 2:
@@ -92,7 +89,7 @@ case 1:
   }
   else {
     lose();
-    return(0);
+    
   }
   break;
 default:
@@ -118,7 +115,7 @@ case 1:
   }
   else {
     lose();
-    return(0);
+    
   }
   break;
 case 2:
@@ -132,12 +129,13 @@ case 2:
   }
   else {
     lose();
-    return(0);
   }
   break;
 
 default:
   break;
 }
+this_thread::sleep_for(chrono::seconds(100));
+return(0);
 }
 

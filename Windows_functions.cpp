@@ -1,5 +1,4 @@
 #include "Windows_functions.hpp"
-#include <unistd.h>
 #include <cstdlib>
 #include <time.h>
 #include <iostream>
@@ -37,5 +36,9 @@ void calculate() {
 }
 
 void lose() {
-    cout << "You got stung! Fall back!";
+    string nothing;
+    while (true) {
+        cout << "You got stung! Restart the program\n";
+        cin >> nothing;
+    }
 }
